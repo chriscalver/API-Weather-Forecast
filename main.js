@@ -10,7 +10,7 @@ fetch("https://weatherapi-com.p.rapidapi.com/forecast.json?q=42.98%2C-81.25&days
     //console.log(response);
   //  console.log(response.content);
     
-     document.getElementById('box1').innerHTML = response.location.region;
+     document.getElementById('box1').innerHTML = response.location.name;
      document.getElementById('box2').innerHTML = '- ' + response.forecast.forecastday[0].day.maxtemp_c + ' -';
 })
 .catch(err => {
